@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+html {
+  font-size: 1.25rem;
+  background-color: #fff;
+  color: #f4f4f4;
+  scroll-behavior: smooth;
+}
+
+#home {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(./img/Main.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+
+.navcon {
+  background-color: transparent;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  font-size: 80%;
+  letter-spacing: 3px;
+  transition: 0.1s;
+}
+
+.nav-link:hover {
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+.navbar-brand {
+  font-size: 100%;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 1px;
+}
+
+p {
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.btn {
+  background: #eba741;
+  color: #fff;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+  transition: background 0.3s;
+}
+
+.intro {
+  padding: 150px;
+}
+
+.btn-container {
+  display: grid;
+  justify-content: center;
+}
+
+/* GALLERY PAGE */
+
+.sec1 {
+  min-height: 100vh;
+  background: radial-gradient(#fff, #41413e);
+  background-position: center;
+  background-size: cover;
+}
+
+#slider {
+  overflow: hidden;
+}
+
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 15s slider infinite;
+}
+
+#slider figure img {
+  width: 20%;
+  float: left;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+
+  20% {
+    left: 0;
+  }
+
+  25% {
+    left: -100%;
+  }
+
+  45% {
+    left: -100%;
+  }
+
+  50% {
+    left: -200%;
+  }
+
+  70% {
+    left: -200%;
+  }
+
+  75% {
+    left: -300%;
+  }
+
+  95% {
+    left: -300%;
+  }
+
+  100% {
+    left: -400%;
+  }
+
+  150% {
+    left: -500%;
+  }
+}
+
+/* ABOUT US PAGE */
+
+.sec2 {
+  min-height: 100vh;
+  background: radial-gradient(#fff, #eba741);
+  background-position: center;
+  background-size: cover;
+}
+
+.cardcon {
+  background-color: #fff;
+  min-height: 400px;
+  padding: 20px;
+}
+
+h3 {
+  font-size: 50px;
+  letter-spacing: 3px;
+}
+
+p {
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+.card-text {
+  text-align: 3px;
+  color: black;
+}
+
+.card h4 {
+  color: #3e4046;
+  font-size: 90%;
+  margin-bottom: -20px;
+  padding: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+/* CONTACT US PAGE */
+
+#contact {
+  min-height: 90vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./img/yes.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.sec3 {
+  color: #f4f4f4;
+  padding-top: 10%;
+}
+
+.btn .btn-primary {
+  background: #eba741;
+  color: #fff;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+  transition: background 0.3s;
+}
+
+/* FOOTER */
+
+main {
+  width: 60%;
+  margin: 2em auto;
+  line-height: 1.8;
+  outline: 1px solid #c2c2c2;
+  padding: 2em;
+}
+
+footer p {
+  padding: 0;
+  font-size: 0.83m;
+  color: #fff;
+  margin: 1em 0;
+  font-size: 1rem;
+  letter-spacing: 3px;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  margin: 1em 0;
+  justify-content: center;
+
+
+}
+
+footer ul li a {
+  padding: 1em;
+  text-decoration: none;
+  color: #fff;
+  transition: 100ms;
+}
+
+footer ul li a:hover {
+  color: var(--primary);
+}
+
+footer {
+  width: 100%;
+  background: #eba741;
+  color: #fff;
+  place-items: center;
+  padding: 1em;
+  font-size: 1.2rem;
+}
+
+/* FOOTER STYLE */
+
+body {
+  min-height: 100vh;
+}
+
+.sticky-footer {
+  position: sticky;
+  top: 100%;
+}
